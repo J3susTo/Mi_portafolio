@@ -1,0 +1,118 @@
+/* slider-styles.css */
+.slider-section * {
+    box-sizing: border-box;
+}
+
+.slider-section {
+    display: grid;
+    place-items: center;
+    background: #1e2326;
+    padding: 2rem 0;
+}
+
+.slider-section .slider-container {
+    max-width: 1000px;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.slider-section .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-section .slide {
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.slider-section .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.slider-section .slide:hover img {
+    transform: scale(1.05);
+}
+
+.slider-section .slide-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 2rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.slider-section .slide:hover .slide-overlay {
+    opacity: 1;
+}
+
+.slider-section .slide-title {
+    font-size: 1.5rem;
+    color: #1CB698;
+}
+
+.slider-section .slide-description {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.slider-section .slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 1rem;
+    z-index: 2;
+}
+
+.slider-section .slider-btn {
+    background: rgba(28, 182, 152, 0.2);
+    border: none;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    backdrop-filter: blur(4px);
+    transition: background 0.3s ease;
+}
+
+.slider-section .slider-btn:hover {
+    background: rgba(28, 182, 152, 0.4);
+}
+
+.slider-section .dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 2;
+}
+
+.slider-section .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slider-section .dot.active {
+    background: #1CB698;
+}
