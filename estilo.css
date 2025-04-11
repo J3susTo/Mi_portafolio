@@ -739,6 +739,64 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
+.btn-pdf {
+    all: unset;
+    color: #fff !important;
+    padding: 3px 12px;
+    border-radius: 5% !important;
+    width: 40% !important;
+    font-weight: bold;
+    font-size: 15px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.btn-pdf:hover {
+    transform: translateY(-2px);
+    color: #fff !important;
+}
+
+#certificados-container {
+    display: none;
+    /* Oculto por defecto */
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 33%;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certificado-form button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    background-color: #343a40;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.certificado-form button:hover {
+    background-color: #495057;
+}
+
+#toggle-certificados {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-certificados:hover {
+    background-color: #0056b3;
+}
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
