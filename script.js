@@ -127,3 +127,29 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
   }
 });
 */
+
+  // Evitar clic derecho
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Bloquear teclas comunes de devtools
+  document.addEventListener('keydown', function (e) {
+    if (
+      e.key === 'F12' ||
+      (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
+      (e.ctrlKey && e.key === 'U')
+    ) {
+      e.preventDefault();
+    }
+  });
+
+  // Detectar apertura de DevTools (experimental, no 100% confiable)
+  setInterval(() => {
+    const before = new Date();
+    debugger; // esto pausa si la consola está abierta
+    const after = new Date();
+    if (after - before > 100) {
+      alert("¡No está permitido inspeccionar esta página!");
+      window.location.reload();
+    }
+  }, 1000);
+
