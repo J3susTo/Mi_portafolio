@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="slider-styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css">
+  <!-- ✅ SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- ✅ EmailJS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -219,7 +224,7 @@
                 <a href="https://www.youtube.com/@JESUSANTONIOTOLENTINOVARGAS" target="_blank"><i
                         class="fab fa-youtube"></i></a>
                 <!-- Botón para ver el CV (se usa iframe para previsualización) -->
-                <a href="https://docs.google.com/viewer?url=https://github.com/J3susTo/cv-certificados/raw/main/CV%20Jesus%20Tolentino%20Vargas.docx"
+                <a href="https://docs.google.com/viewer?url=https://github.com/J3susTo/cv-certificados/raw/main/CV%20Jesus%20Tolentino%20Vargas.pdf"
                     target="_blank" class="btn-pdf">
                     Ver CV <i class="fa-solid fa-file-pdf"></i>
                 </a>
@@ -342,8 +347,8 @@
             <!-- Contenedor oculto con los Certificados -->
             <div id="certificados-container" style="display: none;">
                 <form class="certificado-form"
-                    action="https://docs.google.com/viewer?url=https://github.com/J3susTo/cv-certificados/raw/main/CERTIFICADO%20IDAT.pdf" target="_blank"
-                    method="get">
+                    action="https://docs.google.com/viewer?url=https://github.com/J3susTo/cv-certificados/raw/main/CERTIFICADO%20IDAT.pdf"
+                    target="_blank" method="get">
                     <button type="submit">
                         <i class="fa-solid fa-file-pdf"></i> Certificado IDAT
                     </button>
@@ -573,20 +578,32 @@
 
                 <div class="col derecha">
                     <h3>Experiencia de trabajo</h3>
+
+
                     <div class="item der">
-                        <h4>Supervisor de Operaciones</h4>
-                        <span class="casa">Texaco Cruce Jarabacoa(Strata S.R.L)</span>
-                        <span class="fecha">2022 - 2024</span>
-                        <p>Trabajé como Supervisor de Operaciones en Texaco Cruce Jarabacoa (Strata S.R.L) desde 2022
-                            hasta 2024. En esta posición, fui responsable de coordinar y supervisar las operaciones
-                            diarias,
-                            asegurando la eficiencia y el cumplimiento de los estándares de seguridad y calidad en todas
-                            las
-                            actividades realizadas.</p>
+                        <h4>Motorizado Tramitador</h4>
+                        <span class="casa">Premium Brands S.A.C - Lima</span>
+                        <span class="fecha">Abr 2021 - Presente</span>
+                        <p>Me desempeño como motorizado tramitador, gestionando trámites administrativos, legales y
+                            logísticos con eficiencia. Mantengo una relación fluida con instituciones públicas y
+                            privadas para asegurar el correcto desarrollo de gestiones empresariales.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
+
+                    <div class="item der">
+                        <h4>Analista Programador</h4>
+                        <span class="casa">Premium Brands S.A.C - Lima</span>
+                        <span class="fecha">Jun 2024 - Presente</span>
+                        <p>Actualmente trabajo como analista programador, participando en el desarrollo y mantenimiento
+                            de soluciones informáticas internas. Mi rol abarca el análisis de requerimientos, diseño de
+                            software y programación de sistemas para optimizar los procesos de la empresa.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
                     <div class="item der">
                         <h4>Desarrollador Fullstack</h4>
                         <span class="casa">Software como Servicio(Trabajo Independiente)</span>
@@ -596,21 +613,6 @@
                             Mi enfoque se centra en el diseño, desarrollo y despliegue de aplicaciones escalables,
                             utilizando
                             tecnologías modernas para ofrecer soluciones integrales y personalizadas a mis clientes.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Scrum Master</h4>
-                        <span class="casa">Proyecto Universitario Colaborativo.</span>
-                        <span class="fecha">2023 - 2024</span>
-                        <p>He trabajado como Scrum Master en proyectos de desarrollo de software colaborativo, donde mi
-                            rol
-                            fue facilitar la comunicación y el trabajo en equipo, asegurando que se siguieran las
-                            mejores prácticas
-                            ágiles y se cumplieran los plazos establecidos. Mi objetivo principal fue maximizar la
-                            eficiencia del
-                            equipo y la calidad del producto final.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -627,71 +629,87 @@
 
             <div class="slider-section">
                 <div class="slider-container">
-                    <div class="slider" style="transform: translateX(-500%);"><a
-                            href="https://github.com/DevIngsoftware?tab=repositories" target="_blank" class="slide">
+                    <div class="slider" style="transform: translateX(-500%);">
+                        <a class="slide">
                             <img src="/img/Sisturno1.jpg" alt="Gestión de Turno">
                             <div class="slide-overlay">
                                 <h3 class="slide-title">Gestión de Turno</h3>
                                 <p class="slide-description">Sistema de turnos desarrollado con HTML, JavaScript, CSS,
                                     Spring Security y Java.</p>
                             </div>
-                        </a><a href="https://github.com/DevIngsoftware?tab=repositories" target="_blank" class="slide">
-                            <img src="/img/Sisturno2.jpg" alt="Gestión de Turno">
+                        </a>
+                        <a class="slide">
+                            <img src="/img/sis-intranet.png" alt="Sistema Intranet">
                             <div class="slide-overlay">
-                                <h3 class="slide-title">Gestión de Turno</h3>
-                                <p class="slide-description">Sistema de turnos desarrollado con HTML, JavaScript, CSS,
+                                <h3 class="slide-title">Sistema Intranet</h3>
+                                <p class="slide-description">Sistema de Intranet desarrollado HTML, JavaScript, CSS,
                                     Spring Security y Java.</p>
                             </div>
-                        </a><a href="https://github.com/DevIngsoftware?tab=repositories" target="_blank" class="slide">
+                        </a>
+                        <a class="slide">
+                            <img src="/img/sis_dashbord_intranet.png" alt="Sistema_dashbord_Intranet">
+                            <div class="slide-overlay">
+                                <h3 class="slide-title">Sistema Intranet dashbord</h3>
+                                <p class="slide-description">Sistema de Intranet desarrollado HTML, JavaScript, CSS,
+                                    Spring Security y Java.</p>
+                            </div>
+                        </a>
+                        <a class="slide">
                             <img src="/img/Sisturno3.jpg" alt="Gestión de Turno">
                             <div class="slide-overlay">
                                 <h3 class="slide-title">Gestión de Turno</h3>
                                 <p class="slide-description">Sistema de turnos desarrollado con HTML, JavaScript, CSS,
                                     Spring Security y Java.</p>
                             </div>
-                        </a><a href="https://github.com/DevIngsoftware?tab=repositories" target="_blank" class="slide">
-                            <img src="/img/SisPrestamo1.jpg" alt="Sistema de Prestamos">
+                        </a>
+                        <a class="slide">
+                            <img src="/img/web_dental.png" alt="Web_dental">
                             <div class="slide-overlay">
-                                <h3 class="slide-title">Sistema de Prestamos</h3>
-                                <p class="slide-description">Sistema gestion de prestamo desarrollado con C# y sql
-                                    Server.</p>
+                                <h3 class="slide-title">Web para contarlar un comercio</h3>
+                                <p class="slide-description">Sistema de Facturacion desarrollado con CSS, JavaScript y PHP.
+                                </p>
                             </div>
-                        </a><a href="https://github.com/DevIngsoftware?tab=repositories" target="_blank" class="slide">
+                        </a>
+                        <a class="slide">
+                            <img src="/img/Web_para_ventas.png" alt="Web_para_solicitar_y_vender">
+                            <div class="slide-overlay">
+                                <h3 class="slide-title">Web Atractiva para Ventas</h3>
+                                <p class="slide-description">Sistema gestion de prestamo desarrollado con CSS , PHP Y JavaScript.</p>
+                            </div>
+                        </a>
+                        <a class="slide">
                             <img src="/img/SisPrestamo2.jpg" alt="Sistema de Prestamos">
                             <div class="slide-overlay">
                                 <h3 class="slide-title">Sistema de Prestamos</h3>
-                                <p class="slide-description">Sistema gestion de prestamo desarrollado con C# y sql
+                                <p class="slide-description">Sistema gestion de prestamo desarrollado con Java y sql
                                     Server.</p>
                             </div>
-                        </a><a href="https://github.com/DevIngsoftware?tab=repositories" target="_blank" class="slide">
-                            <img src="/img/SisPrestamo3.jpg" alt="Sistema de Prestamos">
-                            <div class="slide-overlay">
-                                <h3 class="slide-title">Sistema de Prestamos</h3>
-                                <p class="slide-description">Sistema gestion de prestamo desarrollado con C# y sql
-                                    Server.</p>
-                            </div>
-                        </a><a href="https://github.com/DevIngsoftware?tab=repositories" target="_blank" class="slide">
+                        </a>
+                        <a class="slide">
                             <img src="/img/SisHotel1.jpg" alt="Sistema Gestion de Hotel">
                             <div class="slide-overlay">
                                 <h3 class="slide-title">Sistema Gestion de Hotel</h3>
-                                <p class="slide-description">Sistema gestion de hotel desarrollado con C# y sql Server.
+                                <p class="slide-description">Sistema gestion de hotel desarrollado con Java y sql Server.
                                 </p>
                             </div>
-                        </a><a href="https://github.com/DevIngsoftware?tab=repositories" target="_blank" class="slide">
+                        </a>
+                        <a class="slide">
                             <img src="/img/SisHotel2.jpg" alt="Sistema Gestion de Hotel">
                             <div class="slide-overlay">
                                 <h3 class="slide-title">Sistema Gestion de Hotel</h3>
-                                <p class="slide-description">Sistema gestion de hotel desarrollado con C# y sql Server.
+                                <p class="slide-description">Sistema gestion de hotel desarrollado con Java y sql Server.
                                 </p>
                             </div>
-                        </a><a href="https://github.com/DevIngsoftware?tab=repositories" target="_blank" class="slide">
+                        </a>
+                        <a class="slide">
                             <img src="/img/SisFacturacion.jpg" alt="Sistema de Facturacion">
                             <div class="slide-overlay">
                                 <h3 class="slide-title">Sistema de Facturacion</h3>
-                                <p class="slide-description">Sistema de Facturacion desarrollado con C# y sql Server.
+                                <p class="slide-description">Sistema de Facturacion desarrollado con Java y sql Server.
                                 </p>
                             </div>
-                        </a></div>
+                        </a>
+                    </div>
                     <div class="slider-buttons">
                         <button class="slider-btn prev-btn">←</button>
                         <button class="slider-btn next-btn">→</button>
@@ -739,23 +757,23 @@
                 <!-- Mapa -->
                 <div class="col">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d941.6915255683756!2d-70.54745263037648!3d19.249022865004452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDE0JzU2LjUiTiA3MMKwMzInNDguNSJX!5e0!3m2!1ses-419!2sdo!4v1724872065524!5m2!1ses-419!2sdo"
-                        width="530" height="553" style="border:0;" allowfullscreen="" loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62391.26355391875!2d-76.94338474999999!3d-12.217511049999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105bbdfbb504f6f%3A0x659e4e0dde2d7992!2sVilla%20el%20Salvador!5e0!3m2!1ses!2spe!4v1744476695774!5m2!1ses!2spe"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                     <div class="info">
                         <ul>
                             <li>
                                 <i class="fa-solid fa-location-dot"></i>
-                                Rep. Dom, La Vega, Las Martines
+                                Peru, Lima, Villa el salvador
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: +1 (809) 223-7051
+                                Llama: (+51) 984121850
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
-                                Email: Eliecer@Ing.Software
+                                Email: tolentino1092@hotmail.com
                             </li>
                         </ul>
                     </div>
@@ -770,19 +788,54 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="https://www.facebook.com/eliecer1999/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=18092237051&amp;text=Saludos%2C%0AIngeniero%2C%20estoy%20interesado%20en%20uno%20de%20sus%20servicios."
+            <a href="https://www.facebook.com/jesus.tolentino.9822/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=984121850&amp;text=Saludos%2C%0AIngeniero%2C%20estoy%20interesado%20en%20uno%20de%20sus%20servicios."
                 target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.tiktok.com/@ing.software1" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://github.com/DevIngsoftware" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.youtube.com/@ing.software" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@jesustolentino12" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://github.com/J3susTo" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/@JESUSANTONIOTOLENTINOVARGAS" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
-        <p>Copyright © 2025 Ing.Eliecer Bautista. Todos los derechos reservados.</p>
+        <p>Copyright © 2025 Ing.Jesus Tolentino. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.js"></script>
     <script src="script.js"></script>
 
+    <script>
+        (function () {
+            emailjs.init('mj6xRbmx8tcAROx3C'); // Tu Public Key
+        })();
 
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const form = this;
+
+            emailjs.send('service_3y5d8xc', 'template_2eevuqp', {
+                name: form.name.value,
+                phone: form.phone.value,
+                email: form.email.value,
+                theme: form.theme.value,
+                message: form.message.value
+            })
+                .then(function (response) {
+                    Swal.fire({
+                        title: '¡Mensaje Enviado!',
+                        text: 'Tu mensaje fue enviado con éxito.',
+                        icon: 'success',
+                        background: '#eeeeee'
+                    });
+                    form.reset();
+                }, function (error) {
+                    Swal.fire({
+                        title: '¡Error!',
+                        text: 'Hubo un problema al enviar el mensaje. Intenta de nuevo.',
+                        icon: 'error',
+                        background: '#eeeeee'
+                    });
+                    console.log('Error:', error);
+                });
+        });
+    </script>
 </body>
 
 </html>

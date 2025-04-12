@@ -83,14 +83,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
-
-
-
-
-
-
-
+/*
 
 document.getElementById('contactForm').addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -104,7 +97,7 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
   };
 
   try {
-    const response = await fetch('https://api.ing.software/mensajes/save', {
+    const response = await fetch('http://localhost:3000/api/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -133,3 +126,4 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
     });
   }
 });
+*/
